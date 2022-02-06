@@ -1,17 +1,12 @@
 package com.company;
 
-import javax.swing.JPanel;
-
 public class Main {
-
     public static void main(String[] args) throws InterruptedException {
-        JPanel panel1= new JPanel();
-        Form form = new Form(panel1);
+        Form form = new Form();
 
         while(form.flag) {
-            System.out.println("Cicle");
-            Thread.sleep(500L);
+            System.out.println("Circle");
+            Thread.sleep(500L); // ms
         }
-
     }
 }

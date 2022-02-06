@@ -3,15 +3,19 @@ package com.company;
 import javax.swing.*;
 
 public class Form extends JFrame{
-    public JButton button1;
     boolean flag = true;
 
-    public Form(JPanel panel1) {
-        this.setContentPane(panel1);
+    public Form() {
+        JPanel panel= new JPanel();
+        JButton button = new JButton();
+        panel.add(button);
+
+        this.setContentPane(panel);
+
         this.setVisible(true);
         this.setDefaultCloseOperation(3);
         this.setSize(300, 300);
-        this.button1.addActionListener((e) -> {
+        button.addActionListener((e) -> {
             this.flag = false;
         });
     }
